@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>براء أحمد — مطور مواقع ويب</title>
+  <meta name="description" content="معرض أعمال براء أحمد، مطور ومصمم مواقع ويب ومتاجر إلكترونية سريعة ومتجاوبة." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Subtle Architectural Grid Background -->
+  <div class="bg-grid"></div>
+
+  <!-- Navbar -->
+  <header id="navbar">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark">B.</span>
+        <span>براء أحمد</span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#projects">الأعمال</a>
+        <a href="#process">طريقة العمل</a>
+        <a href="#about">عني</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" id="theme-toggle" class="theme-btn" aria-label="تبديل المظهر" title="تبديل الوضع الليلي والنهاري">
+          <i class="fa-solid fa-sun" id="theme-icon"></i>
+        </button>
+        <a href="https://wa.me/201001928337" target="_blank" class="btn-header">
+          تواصل مباشر
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-content reveal">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          متاح لاستلام مشاريع جديدة
+        </div>
+        <h1>
+          أبني مواقع ويب سريعة، واضحة، وتخدم أهداف مشروعك فعلياً.
+        </h1>
+        <p class="hero-desc">
+          أنا <strong>براء أحمد</strong>، مطور واجهات ومواقع ويب. أركز على تحويل احتياجات الشركات والمتاجر إلى مواقع منظمة وسهلة الاستخدام على الموبايل والكمبيوتر، بكود نظيف وأداء يعتمد عليه.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">تصفح المشاريع</a>
+          <a href="https://wa.me/201001928337" target="_blank" class="btn-outline">
+            <i class="fa-brands fa-whatsapp"></i> دردشة واتساب
+          </a>
+        </div>
+      </div>
+
+      <!-- Clean Interactive Browser Preview Graphic -->
+      <div class="hero-visual reveal">
+        <div class="browser-mockup" id="hero-mockup">
+          <div class="browser-bar">
+            <div class="browser-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="browser-url">baraa-ahmed.dev</div>
+            <div class="browser-status">200 OK</div>
+          </div>
+          <div class="browser-body">
+            <div class="metric-row">
+              <div class="metric-card">
+                <span class="metric-label">سرعة التحميل</span>
+                <strong class="metric-val">99/100</strong>
+              </div>
+              <div class="metric-card">
+                <span class="metric-label">التوافق</span>
+                <strong class="metric-val">Mobile & Web</strong>
+              </div>
+            </div>
+            <div class="code-snippet">
+              <div class="snippet-line"><span class="c-muted">// هيكل المشروع الأساسي</span></div>
+              <div class="snippet-line"><span class="c-key">const</span> stack = [<span class="c-str">'HTML5'</span>, <span class="c-str">'CSS3'</span>, <span class="c-str">'JS'</span>, <span class="c-str">'Node.js'</span>];</div>
+              <div class="snippet-line"><span class="c-key">function</span> <span class="c-fn">deployProject</span>(client) {</div>
+              <div class="snippet-line">  <span class="c-key">return</span> client.ready ? <span class="c-str">'Live on Vercel'</span> : <span class="c-str">'Testing...'</span>;</div>
+              <div class="snippet-line">}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section container">
+      <div class="section-head reveal">
+        <span class="eyebrow">نماذج من شغلي</span>
+        <h2>مشاريع تم تنفيذها ورفعها أونلاين</h2>
+        <p>كل مشروع هنا كان له هدف محدد ومشكلة عملية تم حلها بالكود.</p>
+      </div>
+
+      <div class="projects-list">
+        <!-- Project 1 -->
+        <article class="project-row reveal">
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-num">01</span>
+              <span class="project-type">متجر إلكتروني وكتالوج</span>
+            </div>
+            <h3>متجر بيبسي بارتس (Pepse Parts)</h3>
+            <p class="project-summary">
+              <strong>المشكلة والحل:</strong> محل قطع غيار محمول كان بيحتاج يعرض أكتر من 600 صنف من الشاشات والبطاريات للتجار والعملاء مع تحديث مستمر للأسعار. بنيت كتالوج سريع ببحث فوري يقرأ البيانات من ملفات Excel ويحدّث الأسعار والأقسام تلقائياً بدون تدخل يدوي.
+            </p>
+            <div class="tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>Excel Automation</span>
+            </div>
+            <a href="https://pepse-parts.vercel.app/" target="_blank" class="link-arrow">
+              فتح الموقع المباشر <i class="fa-solid fa-arrow-up-left-from-square"></i>
+            </a>
+          </div>
+          <div class="project-preview">
+            <div class="preview-inner">
+              <i class="fa-solid fa-microchip"></i>
+              <span>pepse-parts.vercel.app</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-row reveal">
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-num">02</span>
+              <span class="project-type">موقع شركة وخدمات</span>
+            </div>
+            <h3>شركة النيل للاستشارات الأونلاين</h3>
+            <p class="project-summary">
+              <strong>المشكلة والحل:</strong> تصميم واجهة رسمية باللغة العربية (RTL) لشركة استشارات، تركز على وضوح الخدمات الاستشارية وسهولة وصول العميل لنموذج الحجز والتواصل في خطوات بسيطة ومنظمة على مختلف الشاشات.
+            </p>
+            <div class="tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsive UI</span>
+            </div>
+            <a href="https://nile-agency.vercel.app/" target="_blank" class="link-arrow">
+              فتح الموقع المباشر <i class="fa-solid fa-arrow-up-left-from-square"></i>
+            </a>
+          </div>
+          <div class="project-preview">
+            <div class="preview-inner">
+              <i class="fa-solid fa-building-columns"></i>
+              <span>nile-agency.vercel.app</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-row reveal">
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-num">03</span>
+              <span class="project-type">معرض أعمال شخصي</span>
+            </div>
+            <h3>الموقع الشخصي (Portfolio)</h3>
+            <p class="project-summary">
+              <strong>الفكرة والتنفيذ:</strong> مساحة لعرض المشاريع البرمجية بشكل مباشر وبدون حشو بصري، مع التركيز على سرعة التصفح، وضوح التفاصيل التقنية لكل مشروع، وتوفير وسائل تواصل فورية.
+            </p>
+            <div class="tags">
+              <span>HTML5</span>
+              <span>CSS Grid</span>
+              <span>Vanilla JS</span>
+            </div>
+            <a href="#top" class="link-arrow">
+              أنت تتصفحه حالياً <i class="fa-solid fa-check"></i>
+            </a>
+          </div>
+          <div class="project-preview">
+            <div class="preview-inner">
+              <i class="fa-solid fa-terminal"></i>
+              <span>Baraa Ahmed Portfolio</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Work Process Section -->
+    <section id="process" class="section container">
+      <div class="section-head reveal">
+        <span class="eyebrow">كيف أعمل</span>
+        <h2>خطوات تنفيذ أي مشروع</h2>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <span class="step-index">1</span>
+          <h3>فهم المطلوب</h3>
+          <p>نحدد هدف الموقع، الصفحات المطلوبة، والجمهور اللي هيستخدمه عشان نبني هيكل صح من البداية.</p>
+        </div>
+        <div class="step-card reveal">
+          <span class="step-index">2</span>
+          <h3>التصميم والتكويد</h3>
+          <p>بناء الواجهة بكود نظيف متجاوب مع الموبايل والكمبيوتر مع مراجعة مستمرة لكل جزء بيخلص.</p>
+        </div>
+        <div class="step-card reveal">
+          <span class="step-index">3</span>
+          <h3>الاختبار والرفع</h3>
+          <p>اختبار السرعة والروابط على أكتر من جهاز، ثم رفع الموقع أونلاين وتسليمك كافة الملفات.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Skills Section -->
+    <section id="about" class="section container">
+      <div class="about-box reveal">
+        <div class="about-text">
+          <span class="eyebrow">نبذة عني</span>
+          <h2>مطور ويب بهتم بالتفاصيل العملية</h2>
+          <p>
+            اسمي <strong>براء أحمد</strong>، بشتغل على تطوير مواقع الشركات، صفحات الهبوط، والمتاجر الإلكترونية. هدفي في أي مشروع إن الموقع يشتغل بسلاسة عند العميل النهائي، يكون سريع في التحميل، وسهل في التعديل والتطوير مستقبلاً.
+          </p>
+        </div>
+        <div class="skills-list">
+          <div class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5</div>
+          <div class="skill-pill"><i class="fa-brands fa-css3-alt"></i> CSS3 / Responsive</div>
+          <div class="skill-pill"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</div>
+          <div class="skill-pill"><i class="fa-brands fa-node-js"></i> Node.js</div>
+          <div class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git & GitHub</div>
+          <div class="skill-pill"><i class="fa-solid fa-server"></i> Vercel Deployment</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section container">
+      <div class="contact-panel reveal">
+        <h2>عندك فكرة موقع أو متجر عايز تنفذه؟</h2>
+        <p>ابعتلي تفاصيل مشروعك على الواتساب أو الإيميل وهرد عليك في أسرع وقت.</p>
+        
+        <div class="contact-actions">
+          <a href="https://wa.me/201001928337" target="_blank" class="btn-primary">
+            <i class="fa-brands fa-whatsapp"></i> 01001928337
+          </a>
+          <button type="button" class="btn-outline" id="copy-email-btn" data-email="baraaaahmed11@gmail.com">
+            <i class="fa-regular fa-copy"></i> <span id="copy-text">baraaaahmed11@gmail.com</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <p>تم الإنشاء والتطوير بواسطة <strong>براء أحمد</strong> © 2026</p>
+      <div class="footer-links">
+        <a href="https://wa.me/201001928337" target="_blank">واتساب</a>
+        <a href="mailto:baraaaahmed11@gmail.com">البريد الإلكتروني</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
