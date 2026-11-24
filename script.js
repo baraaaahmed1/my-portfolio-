@@ -74,4 +74,4 @@ if (mockup && window.innerWidth > 880) {
   mockup.addEventListener('mouseleave', () => {
     mockup.style.transform = 'perspective(900px) rotateY(0deg) rotateX(0deg)';
   });
-}لأ
+}
